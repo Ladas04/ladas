@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ButtonMenu1"
+            app:srcCompat="@drawable/priora"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ImageView1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/TextViewHeader"
+                android:layout_width="131dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Лада Приора &quot;Black_Edition&quot;"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="6dp" />
+
+            <TextView
+                android:id="@+id/TextViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="20 февраля в 17:18"
+                app:layout_constraintTop_toTopOf="@+id/TextViewHeader"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="72dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ButtonMenu1"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:background="@drawable/tochki"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:text="Из ныне выпускаемых моделей Лады наиболее часто подвергается  тюнингу Приора, и АвтоВАЗ не преминул воспользоваться желанием покупателей иметь машины «не как у всех». В прошлом году завод выпустил партию Приор с двуцветной окраской кузова, а теперь к выходу на рынок готовы сразу две специальные версии. В исполнении Black Edition седан окрашен в черный цвет «Пантера», а White Edition — в «Белое облако». Оба колера — из штатной палитры модели, но на спецверсиях такой же цвет у 15-дюймовых легкосплавных колес и молдинга на крышке багажника." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/likes"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:text="0">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ImageButton2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/repost"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/TextViewRepost"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:text="0">
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="95dp"
+            app:srcCompat="@android:drawable/ic_menu_view">
+        </ImageView>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:text="5">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
