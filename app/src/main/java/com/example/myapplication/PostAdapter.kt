@@ -33,9 +33,9 @@ class PostViewHolder(
     fun bind(post: Post) {
         binding.apply {
             TextViewHeader.text = post.header
-            TextViewContent.text = post.content
+            TextView1.text = post.content
             TextViewDateTime.text = post.dataTime
-            TextViewLike.text = numberRangeSwitch(post.amountlike)
+            TextView2.text = numberRangeSwitch(post.amountlike)
             TextViewRepost.text = numberRangeSwitch(post.amountrepost)
             likeButton.setBackgroundResource(
                 if (post.isLike)
@@ -46,10 +46,10 @@ class PostViewHolder(
             likeButton.setOnClickListener{
                 onInteractionListener.onLike(post)
             }
-            ImageButtonRepost.setOnClickListener{
+            ImageButton2.setOnClickListener{
                 onInteractionListener.onShare(post)
             }
-            ImageButtonMenu.setOnClickListener {
+            ButtonMenu1.setOnClickListener {
                 PopupMenu(it.context, it).apply {
                     inflate(R.menu.menu_post)
                     setOnMenuItemClickListener { item ->

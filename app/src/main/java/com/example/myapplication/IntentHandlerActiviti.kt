@@ -6,13 +6,13 @@ import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFINITE
-import ru.btpit.nmedia.databinding.ActivityIntentHandlerBinding
 import com.google.android.material.snackbar.Snackbar
+import ru.btpit.nmedia.databinding.ActivityMain2Binding
 
 class IntentHandlerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityIntentHandlerBinding.inflate(layoutInflater)
+        val binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         intent?.let {

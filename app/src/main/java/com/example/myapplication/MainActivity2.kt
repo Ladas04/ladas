@@ -7,7 +7,7 @@ import android.view.inputmethod.InputMethodManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import ru.btpit.nmedia.databinding.ActivityMain2Binding
-import ru.btpit.nmedia.databinding.ActivityMainBinding
+
 import ru.btpit.nmedia.databinding.CardPostBinding
 
 

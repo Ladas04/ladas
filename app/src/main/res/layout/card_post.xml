@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="400dp"
-    tools:context=".MainActivity"
+
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +24,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/ButtonMenu1"
-            app:srcCompat="@drawable/priora"/>
+            app:srcCompat="@drawable/r1"/>
 
         <LinearLayout
             android:id="@+id/linearLayout1"
@@ -41,7 +41,7 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Лада Приора &quot;Black_Edition&quot;"
+                android:text="Yamaha YZF-R1 &quot;Black_Edition&quot;"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="72dp"
                 tools:layout_editor_absoluteY="6dp" />
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="20 февраля в 17:18"
+                android:text="20 июля в 19:17"
                 app:layout_constraintTop_toTopOf="@+id/TextViewHeader"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="72dp" />
@@ -78,7 +78,9 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp"
-        android:text="Из ныне выпускаемых моделей Лады наиболее часто подвергается  тюнингу Приора, и АвтоВАЗ не преминул воспользоваться желанием покупателей иметь машины «не как у всех». В прошлом году завод выпустил партию Приор с двуцветной окраской кузова, а теперь к выходу на рынок готовы сразу две специальные версии. В исполнении Black Edition седан окрашен в черный цвет «Пантера», а White Edition — в «Белое облако». Оба колера — из штатной палитры модели, но на спецверсиях такой же цвет у 15-дюймовых легкосплавных колес и молдинга на крышке багажника." />
+        android:text="Начиная с FZR1000 в 1988 Ямаха представила несколько инженерных новинок для мотоциклов, включая алюминиевую раму «DeltaBox», передовые впускное и выпускное устройства, в том числе 5 клапанов на цилиндр, и выхлопной электрический клапан EXUP. Полезная мощность двигателя была резко увеличена по всей области RPM, что дало одну из самых пологих кривых мощности для мотоциклов. Алюминиевая рама Deltabox по сравнению со стальной была очень лёгкой и жесткой, как управляемость, так и тормозные качества у неё были ощутимо лучше.
+
+В течение следующих четырёх лет Ямаха достигала значительных продаж и успехов в гонках, пока в 1992 Хонда не представила CBR900RR Fireblade, который был, по сути, сочетанием шасси от модели 600cc с расточенным двигателем от 750cc. Хотя Fireblade был не такой мощный, как FZR1000, но он был короче и легче, что дало лучшую управляемость. Ямахе потребовалось четыре года, чтобы серьёзно изменить вес и мощность, представив недолго просуществовавший YZF1000R «ThunderAce». Однако, YZF1000R по-прежнему базировался на оригинальном двигателе Genesis, который был резко наклонен вперед, отчего колесная база должна была быть длиннее, чем у Fireblade." />
 
     <LinearLayout
         android:layout_width="match_parent"
